@@ -22,6 +22,7 @@ INSERT INTO dish_ingredients (dish_id, ingredient_id, quantity_ingredient, quant
 (1,4,5, 'grams'),
 (1,5,5, 'grams');
 
+-- In case i need to see all the data in the tables
 SELECT * from dishes
 SELECT * from ingredients;
 SELECT * from dish_ingredients;
@@ -45,7 +46,7 @@ JOIN dishes d ON di.dish_id = d.id
 JOIN ingredients i ON di.ingredient_id = i.id
 GROUP BY d.name;
 
--- Delete all values in a table
+-- in case i need to delete all values in a table
 DELETE FROM dishes;
 DELETE FROM ingredients;
 DELETE FROM dish_ingredients;

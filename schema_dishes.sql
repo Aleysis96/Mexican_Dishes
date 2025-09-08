@@ -27,7 +27,7 @@ CREATE TABLE dish_ingredients (
     FOREIGN KEY (ingredient_id) REFERENCES ingredients(id)
 );
 
-
+-- in case i need to delete all tables
 DROP TABLE IF EXISTS dish_ingredients;
 DROP TABLE IF EXISTS ingredients;
 DROP TABLE IF EXISTS dishes;
